@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body class="contacto">
-        <!--CONTACT-->
+<body id ="contacto">
+
+        <!--Head-->
     <section class="head">
-        <h1>DIEGO VALLEJO ZAPATA - Riwi Developer</h1>
+        <h1>DIEGO VALLEJO ZAPATA</h1>
+        <p class="profesion">Sofware And Geographer Engineer</p>
 
 
         <nav>
@@ -21,27 +23,32 @@
 
     </section>
 
+    <!--Body-->
     <section class="form-register">
 
         <h2>Contact me</h2>
 
         <form action="/send" method="post">
-            <label for="name">Name:</label>
+            <label class="tags" for="name">Name:</label>
             <input class="controls" type="text" id="name" name="name" placeholder="Write your name" required >
 
-            <label for="email">Email:</label>
+            <label class="tags" for="email">Email:</label>
             <input class="controls" type="email" id="email" name="email" placeholder="Write your email" required>
 
-            <label for="message">Message:</label>
+            <label class="tags" for="message">Message:</label>
             <textarea class="controls" name="message" id="message" rows="4" placeholder="Let me a message" required></textarea>
 
             <p>I agree with<a href="#"> terms and conditions</a></p>
 
-            <input class="botones" type="submit" value="Send">
+            <input id="boton" type="submit" value="Send">
 
         </form>
 
     </section>
+
+
+    <!--Footer-->
+        <a href="https://api.whatsapp.com/send?phone=573502595348/%205202716&text=%C2%A1Hola!%" target="_blank"><img class="btn-wspp" src="./images/whatsapp.png" alt="Logo_whatsapp"></a>
 
     <section class="piePagina">
         <footer>
