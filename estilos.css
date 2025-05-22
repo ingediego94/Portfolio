@@ -6,9 +6,21 @@
 }
 
 #contacto {
-    background-image: url(images/background.jpeg);
+    background-image: linear-gradient(rgba(201,215,245,0.3), rgba(201,215,245,0.3)),url(./images/background.jpeg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body {
+    background: linear-gradient(rgba(248,250,255,0.85), rgba(248,250,255,0.85)), url(./images/background_2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 .head {
@@ -18,23 +30,25 @@
     top: 0;
     color: #e8f3ff;
     text-align: center;
+    height: 100px;
 }
 
 .head h1 {
-    padding-top: 15px;
-    font-size: 27px;
+    padding-top: 7px;
+    font-size: 26px;
     font-weight: bold;
 }
 
 .profesion {
     font-size: small;
     font-style: oblique;
+    padding-top: 0px;
     
 }
 
 .head nav {
-
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .head a {
@@ -42,8 +56,6 @@
     text-decoration: none;
     font-size: 20px;
     margin-left: 15px;
-
-
 }
 
 .head a:hover {
@@ -120,10 +132,12 @@
 }
 .piePagina {
     position: absolute;
+    margin-top: 40px;
     width: 100%;
-    height: 10%;
+    height: 8%;
     background-color: #222b32;
     text-align: center;
+
 }
 
 .piePagina a {
@@ -147,11 +161,81 @@
 
 .btn-wspp {
     position: fixed;
-    width: 60px;
+    width: 50px;
     line-height: 55px;
-    bottom: 120px;
-    right: 50px;
+    bottom: 100px;
+    right: 40px;
     background: none;
-   
+}
 
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: left;
+
+}
+
+.content img {
+    width: 400px;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead {
+    background-color: #1f53c5;
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+td a{
+    cursor: pointer;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before{
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
